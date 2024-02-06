@@ -44,8 +44,8 @@ void main(){
     INTCONbits.PEIE = 1;
     INTCONbits.TMR0IE = 1;
     OPTION_REG = 0x07;
-    TMR0 = 61;
     while(1){
+        TMR0 = 59;
         if(time == 100){
             number++;
             time = 0;
